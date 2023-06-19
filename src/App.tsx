@@ -1,9 +1,12 @@
+import Container from "@mui/material/Container";
 
 function App() {
   return (
-    <div>
-      <h2>Mitla</h2>
-    </div>
+    <Container maxWidth="xl" sx={{border: 2, borderColor: 'primary.main'}}>
+      <div>
+        <h2>Mitla</h2>
+      </div>
+    </Container>
   );
 }
 
