@@ -23,6 +23,13 @@ export const typography: ThemeOptions = {
       lineHeight: '60px',
       textAlign: 'center',
       color: '#212121',
+    },
+    h4: {
+      fontWeight: 400,
+      fontSize: 32,
+      lineHeight: '44px',
+      textAlign: 'center',
+      color: '#212121',
     }
   },
 }
