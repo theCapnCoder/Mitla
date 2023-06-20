@@ -1,0 +1,35 @@
+import { ThemeOptions } from "@mui/material/styles";
+
+export const typography: ThemeOptions = {
+  typography: {
+    fontFamily: 'Montserrat, sans-serif',
+    h1: {
+      fontWeight: 700,
+      fontSize: 80,
+      lineHeight: '72px',
+      textAlign: 'center',
+      color: '#212121',
+    },
+    h2: {
+      fontWeight: 700,
+      fontSize: 48,
+      lineHeight: '60px',
+      textAlign: 'center',
+      color: '#212121',
+    },
+    h3: {
+      fontWeight: 700,
+      fontSize: 36,
+      lineHeight: '60px',
+      textAlign: 'center',
+      color: '#212121',
+    },
+    h4: {
+      fontWeight: 400,
+      fontSize: 32,
+      lineHeight: '44px',
+      textAlign: 'center',
+      color: '#212121',
+    }
+  },
+}
