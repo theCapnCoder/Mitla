@@ -1,7 +1,11 @@
-import React from 'react'
+import { Typography } from "@mui/material";
+import React from "react";
 
 export const Header = () => {
   return (
-    <div>Header</div>
-  )
-}
+    <div>
+      <h1>Header</h1>
+      <Typography variant="h1">Закажи уборку квартиры</Typography>
+    </div>
+  );
+};
