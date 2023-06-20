@@ -16,6 +16,13 @@ export const typography: ThemeOptions = {
       lineHeight: '60px',
       textAlign: 'center',
       color: '#212121',
+    },
+    h3: {
+      fontWeight: 700,
+      fontSize: 36,
+      lineHeight: '60px',
+      textAlign: 'center',
+      color: '#212121',
     }
   },
 }
