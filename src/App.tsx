@@ -15,7 +15,7 @@ import Footer from "./containers/Footer";
 
 function App() {
   return (
-    <Container maxWidth="xl" sx={{ border: 2, borderColor: "primary.main" }}>
+    <Container maxWidth="xl">
       <Header />
       <Main />
       <Discount />
