@@ -42,6 +42,14 @@ export const MuiButton: ComponentsProps = {
         backgroundColor: '#0DC143',
         ...socialTypography,
       },
+      containedWarning: {
+        backgroundColor: "#F25E57",
+        borderRadius: 8,
+        fontWeight: 700,
+        fontSize: 20,
+        lineHeight: '22px',
+        color: '#FFFFFF',
+      }
       // startIcon: {
       //   fontSize: '40px',
       //   color: 'red',
