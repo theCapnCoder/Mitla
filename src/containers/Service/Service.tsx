@@ -1,10 +1,10 @@
 import { Box, Stack, Typography } from "@mui/material";
-import { Card } from "./Card";
 import serviceCards from "./serviceCards";
+import { ServiceCard } from "../../components/ServiceCard";
 
 export const Service = () => {
   return (
-    <Box sx={{ maxWidth: "1400px", margin: "0 auto", padding: "80px 0" }}>
+    <Box sx={{ maxWidth: "1400px", margin: "0 auto", pt: "135px" }}>
       <Typography variant="h2" sx={{ mb: "50px" }}>
         Наши услуги
       </Typography>
@@ -16,7 +16,7 @@ export const Service = () => {
         justifyContent="center"
       >
         {serviceCards.map((card, index) => (
-          <Card key={index} {...card} />
+          <ServiceCard key={index} {...card} />
         ))}
       </Stack>
     </Box>
