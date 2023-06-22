@@ -6,7 +6,6 @@ import Explanation from "./containers/Explanation";
 import Service from "./containers/Service";
 import ExtraService from "./containers/ExtraService";
 import Questions from "./containers/Questions";
-import Support from "./containers/Support";
 import Partners from "./containers/Partners";
 import Branches from "./containers/Branches";
 import News from "./containers/News";
@@ -23,7 +22,6 @@ function App() {
       <Service />
       <ExtraService />
       <Questions />
-      <Support />
       <Partners />
       <Branches />
       <News />
