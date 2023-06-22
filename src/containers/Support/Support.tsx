@@ -1,11 +1,11 @@
-import { Box, Button, IconButton, Stack, Typography } from "@mui/material";
+import { Box, Button, Stack, Typography } from "@mui/material";
 import { Messenger } from "../../components/Icons/Messenger";
 import { Telegram } from "../../components/Icons/Telegram";
 import { Whatsapp } from "../../components/Icons/Whatsapp";
 
 export const Support = () => {
   return (
-    <Box sx={{ mt: "83px", mb: "150px" }}>
+    <Box>
       <Typography variant="h3" sx={{ mb: "27px" }}>
         Служба поддержки 24/7
       </Typography>
