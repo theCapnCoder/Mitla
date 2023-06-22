@@ -5,9 +5,9 @@ import {
   AccordionSummary,
   Box,
   Typography,
+  styled
 } from "@mui/material";
 import questionsData from "./questionsData";
-import styled from "@emotion/styled";
 import Support from "../Support";
 
 const QuestionTypography = styled(Typography)({
@@ -23,7 +23,7 @@ export const Questions = () => {
       <Typography variant="h2" sx={{mb: 1}}>Часто задаваемые вопросы</Typography>
 
       <Box sx={{ display: "flex", justifyContent: "center" }}>
-        <Box sx={{ width: "1400px" }}>
+        <Box sx={{ width: "1400px", mb: 10 }}>
           {questionsData.map(({ question, answer }, index) => (
             <Accordion key={index}>
               <AccordionSummary
