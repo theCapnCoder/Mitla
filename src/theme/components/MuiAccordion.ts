@@ -1,13 +1,14 @@
-import { ComponentsOverrides, ComponentsVariants, Theme } from "@mui/material";
+import { ComponentsOverrides, ComponentsProps, ComponentsVariants, Theme } from "@mui/material";
 
-type ComponentsProps = {
+type Props = {
   MuiAccordion?: {
+    defaultProps?: ComponentsProps['MuiAccordion'];
     styleOverrides?: ComponentsOverrides<Theme>['MuiAccordion'];
     variants?: ComponentsVariants['MuiAccordion'];
   }
 }
 
-export const MuiAccordion: ComponentsProps = {
+export const MuiAccordion: Props = {
   MuiAccordion: {
     styleOverrides: {
       root: {
