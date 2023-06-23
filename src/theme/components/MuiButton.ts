@@ -1,8 +1,8 @@
-import { ComponentsOverrides, ComponentsVariants, Theme } from "@mui/material";
+import { ComponentsOverrides, ComponentsProps, ComponentsVariants, Theme } from "@mui/material";
 
-type ComponentsProps = {
+type Props = {
   MuiButton?: {
-    // defaultProps?: ComponentsProps['MuiButton'];
+    defaultProps?: ComponentsProps['MuiButton'];
     styleOverrides?: ComponentsOverrides<Theme>['MuiButton'];
     variants?: ComponentsVariants['MuiButton'];
   };
@@ -18,7 +18,7 @@ const socialTypography = {
   color: '#FFFFFF',
 }
 
-export const MuiButton: ComponentsProps = {
+export const MuiButton: Props = {
   MuiButton: {
     styleOverrides: {
       root: {

@@ -1,0 +1,43 @@
+type Brance = {
+  city: string,
+  price: string,
+}
+
+const branches: Brance[] = [
+  { city: 'Piastów', price: '+15.00 zł', },
+  { city: 'Pruszków', price: '+15.00 zł', },
+  { city: 'Piaseczno', price: '+18.00 zł', },
+  { city: 'Sulejowek', price: '+20.00 zł', },
+  { city: 'Józefów', price: '+50.00 zł', },
+  { city: 'Kobyłka', price: '+30.00 zł', },
+  { city: 'Ożarów Mazowiecki', price: '+35.00 zł', },
+  { city: 'Otwock', price: '+50.00 zł', },
+  { city: 'Zielonka', price: '+25.00 zł', },
+  { city: 'Legionowo', price: '+30.00 zł', },
+  { city: 'Józefosław', price: '+25.00 zł', },
+  { city: 'Nieporęt', price: '+80.00 zł', },
+  { city: 'Ząbki', price: '+20.00 zł', },
+  { city: 'Radzymin', price: '+75.00 zł', },
+  { city: 'Wola Mrokowska', price: '+100.00 zł', },
+  { city: 'Żyrardów', price: '+90.00 zł', },
+  { city: 'Nadarzyn', price: '+70.00 zł', },
+  { city: 'Izabelin', price: '+50.00 zł', },
+  { city: 'Milanówek', price: '+30.00 zł', },
+  { city: 'Leszno', price: '+70.00 zł', },
+  { city: 'Solec', price: '+70.00 zł', },
+  { city: 'Młochow', price: '+50.00 zł', },
+  { city: 'Nowy Dwór Mazowiecki', price: '+60.00 zł', },
+  { city: 'Jabłonna', price: '+30.00 zł', },
+  { city: 'Konstancin-Jeziorna', price: '+40.00 zł', },
+  { city: 'Wołomin', price: '+35.00 zł', },
+  { city: 'Nowa Iwiczna', price: '+20.00 zł', },
+  { city: ' Łazy', price: '+40.00 zł', },
+  { city: 'Łomianki', price: '+15.00 zł', },
+  { city: 'Raszyn', price: '+15.00 zł', },
+  { city: 'Marki', price: '+20.00 zł', },
+  { city: 'Grodzisk Mazowiecki', price: '+50.00 zł', },
+  { city: 'Brwinów', price: '+25.00 zł', },
+  { city: 'Błonie', price: '+40.00 zł', },
+]
+
+export default branches;
