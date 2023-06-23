@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/Mitla/static/js/main.811d67e7.js",
+    "main.js": "/Mitla/static/js/main.418b7af0.js",
     "index.html": "/Mitla/index.html",
-    "main.811d67e7.js.map": "/Mitla/static/js/main.811d67e7.js.map"
+    "main.418b7af0.js.map": "/Mitla/static/js/main.418b7af0.js.map"
   },
   "entrypoints": [
-    "static/js/main.811d67e7.js"
+    "static/js/main.418b7af0.js"
   ]
 }
