@@ -1,13 +1,14 @@
-import { ComponentsOverrides, ComponentsVariants, Theme } from "@mui/material";
+import { ComponentsOverrides, ComponentsProps, ComponentsVariants, Theme } from "@mui/material";
 
-type ComponentsProps = {
+type Props = {
   MuiTypography: {
+    defaultProps?: ComponentsProps['MuiTypography'];
     styleOverrides?: ComponentsOverrides<Theme>['MuiTypography'];
     variants?: ComponentsVariants['MuiTypography'];
   }
 }
 
-export const MuiTypography: ComponentsProps = {
+export const MuiTypography: Props = {
   MuiTypography: {
     styleOverrides: {
       root: {
