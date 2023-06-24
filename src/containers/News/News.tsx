@@ -28,20 +28,8 @@ const TextTypography = styled(Typography)({
   textAlign: "left",
 });
 
-const ParentContainer = styled(Paper)(() => ({
-  marginBottom: 3.725,
-  position: "relative",
-  width: "100%",
-  // height: 0,
-  paddingBottom: "100%",
-  overflow: "hidden",
-}));
-
 const Image = styled(Box)<ImageProps>({
-  position: "absolute",
-  width: "100%",
-  height: "100%",
-  objectFit: "cover",
+  maxWidth: "100%",
 });
 
 export const News = () => {
@@ -61,12 +49,11 @@ export const News = () => {
             key={index}
             sx={{
               width: "447px",
-              height: "280px",
             }}
           >
-            <ParentContainer>
+            <Box mb={2.5}>
               <Image component="img" src={img} alt="news" />
-            </ParentContainer>
+            </Box>
             <DateTypography mb={1.125}>{date}</DateTypography>
             <TitleTypography mb={1.25}>{title}</TitleTypography>
             <TextTypography>{text}</TextTypography>
