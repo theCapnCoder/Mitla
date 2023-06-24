@@ -1,7 +1,8 @@
+import { Box } from '@mui/material'
 import React from 'react'
 
 export const Footer = () => {
   return (
-    <div>Footer</div>
+    <Box mb={50}>Footer</Box>
   )
 }
