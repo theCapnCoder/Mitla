@@ -7,8 +7,17 @@ import {
   Typography,
 } from "@mui/material";
 import { styled } from "@mui/system";
-import React from "react";
-import buttonData from "./buttonData";
+import React, { FC } from "react";
+
+export type ButtonGroupProps = {
+  discount?: string;
+  text: string;
+  id: number;
+};
+
+export type Props = {
+  data: ButtonGroupProps[];
+};
 
 const DiscountTypography = styled(Typography)({
   fontSize: 22,
@@ -42,7 +51,7 @@ const CustomToggleButton = styled(ToggleButton)(({ theme }) => ({
   },
 }));
 
-export const ButtonGroup = () => {
+export const ButtonGroup: FC<Props> = ({ data }) => {
   const [alignment, setAlignment] = React.useState<string | null>("left");
   const [selected, setSelected] = React.useState(1);
   console.log(selected);
@@ -56,13 +65,6 @@ export const ButtonGroup = () => {
 
   return (
     <>
-      <Box
-        sx={{ width: "100px", height: "30px", "&:hover": { bgcolor: "aqua" } }}
-      >
-        Test
-      </Box>
-
-
       <ToggleButtonGroup
         value={alignment}
         exclusive
@@ -102,42 +104,6 @@ export const ButtonGroup = () => {
           Third
         </ToggleButton>
       </ToggleButtonGroup>
-
-      <CustomToggleButton value={{}}>
-        <ToggleButton
-          value="option1"
-          sx={{
-            backgroundColor: "#FAFAFA",
-            "&.Mui-selected": {
-              backgroundColor: "purple",
-            },
-          }}
-        >
-          Option 1
-        </ToggleButton>
-        <ToggleButton
-          value="option2"
-          sx={{
-            backgroundColor: "#FAFAFA",
-            "&.Mui-selected": {
-              backgroundColor: "blue",
-            },
-          }}
-        >
-          Option 2
-        </ToggleButton>
-        <ToggleButton
-          value="option3"
-          sx={{
-            backgroundColor: "#FAFAFA",
-            "&.Mui-selected": {
-              backgroundColor: "green",
-            },
-          }}
-        >
-          Option 3
-        </ToggleButton>
-      </CustomToggleButton>
 
       {/* <ToggleButtonGroup
         value={alignment}
