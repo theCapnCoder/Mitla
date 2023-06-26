@@ -4,6 +4,7 @@ import { typography } from "./custom/typography";
 import { MuiButton } from "./components/MuiButton";
 import { MuiAccordion } from "./components/MuiAccordion";
 import { MuiTypography } from "./components/MuiTypography";
+import { MuiToggleButton } from "./components/MuiToggleButton";
 
 
 const theme = createTheme({
@@ -13,6 +14,7 @@ const theme = createTheme({
     ...MuiButton,
     ...MuiAccordion,
     ...MuiTypography,
+    ...MuiToggleButton,
   }
 })
 

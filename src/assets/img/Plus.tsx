@@ -15,9 +15,9 @@ export const Plus = (props: SvgIconProps) => {
           id="Vector 25"
           d="M1 12H23"
           stroke="#212121"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           id="Vector 26"
