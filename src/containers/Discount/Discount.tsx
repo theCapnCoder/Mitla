@@ -2,7 +2,8 @@ import { Box, Stack, Typography } from "@mui/material";
 import React from "react";
 import discountCards from "./discountData";
 import { DiscountCard } from "./DiscountCard";
-import { ButtonGroup } from "./ButtonGroup";
+import { ButtonGroup } from "../../components/ButtonGroup";
+import buttonData from "./buttonData";
 
 export const Discount = () => {
   return (
@@ -20,7 +21,7 @@ export const Discount = () => {
 
       <Typography variant="h2">Скидки для постоянных клиентов</Typography>
 
-      <ButtonGroup />
+      <ButtonGroup data={buttonData} />
     </Box>
   );
 };
