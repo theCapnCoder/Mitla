@@ -1,10 +1,13 @@
 {
   "files": {
-    "main.js": "/Mitla/static/js/main.418b7af0.js",
+    "main.js": "/Mitla/static/js/main.99b27113.js",
+    "static/media/hall.png": "/Mitla/static/media/hall.cebc4b032eddd15287c9.png",
+    "static/media/kitchen.png": "/Mitla/static/media/kitchen.0d3a9cd2116c2f1c779a.png",
+    "static/media/room.jpg": "/Mitla/static/media/room.cde6f55730c025491b11.jpg",
     "index.html": "/Mitla/index.html",
-    "main.418b7af0.js.map": "/Mitla/static/js/main.418b7af0.js.map"
+    "main.99b27113.js.map": "/Mitla/static/js/main.99b27113.js.map"
   },
   "entrypoints": [
-    "static/js/main.418b7af0.js"
+    "static/js/main.99b27113.js"
   ]
 }
