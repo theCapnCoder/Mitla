@@ -1,4 +1,4 @@
-import { Box, BoxProps, Paper, Stack, Typography, styled } from "@mui/material";
+import { Box, BoxProps, Stack, Typography, styled } from "@mui/material";
 import newsData from "./newsData";
 
 interface ImageProps extends BoxProps<"img"> {
