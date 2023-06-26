@@ -13,6 +13,34 @@ const theme = createTheme({
     ...MuiButton,
     ...MuiAccordion,
     ...MuiTypography,
+    // MuiToggleButtonGroup: {
+    //   styleOverrides: {
+    //     root: {
+    //       '&.Mui-selected': {
+    //         backgroundColor: 'brown',
+    //         color: 'white',
+    //       },
+    //       backgroundColor: "green",
+    //       borderRadius: 0,
+    //     },
+    //   },
+
+    // },
+    MuiToggleButton: {
+      styleOverrides: {
+        root: {
+          borderRadius: 0,
+          '&.Mui-selected': {
+            backgroundColor: 'blue',
+            color: 'white',
+          },
+          '&.Mui-selected:hover': {
+            backgroundColor: 'brown',
+            color: 'white',
+          },
+        },
+      },
+    },
   }
 })
 
