@@ -29,15 +29,21 @@ const theme = createTheme({
     MuiToggleButton: {
       styleOverrides: {
         root: {
-          borderRadius: 0,
+          padding: "27px 0 31px",
+          textTransform: 'none',
+          fontSize: 18,
+            borderRadius: 6,
+          fontWeight: 700,
+          lineHeight: "22px",
           '&.Mui-selected': {
-            backgroundColor: 'blue',
-            color: 'white',
+            backgroundColor: '#F25E57',
+            borderRadius: 6,
+            color: '#FFF',
           },
-          '&.Mui-selected:hover': {
-            backgroundColor: 'brown',
-            color: 'white',
-          },
+          // '&.Mui-selected:hover': {
+          //   backgroundColor: 'brown',
+          //   color: 'white',
+          // },
         },
       },
     },
