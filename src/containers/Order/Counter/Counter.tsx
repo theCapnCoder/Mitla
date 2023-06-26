@@ -10,6 +10,7 @@ type CounterProps = {
 const ButtonStyled = styled(Button)({
   fontSize: 19,
   minWidth: 70,
+  height: "100%",
 });
 
 const TypographyStyled = styled(Typography)({
