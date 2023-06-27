@@ -1,6 +1,7 @@
 import { Box, Button, Divider, Stack, Typography } from "@mui/material";
 import React from "react";
 import { Counter } from "./Counter/Counter";
+import Support from "../Support";
 
 export const Order = () => {
   return (
@@ -11,6 +12,7 @@ export const Order = () => {
 
       <Stack
         direction={"row"}
+        mb={10.325}
         sx={{ backgroundColor: "#FAFAFA", borderRadius: "8px" }}
       >
         <Divider orientation="horizontal" />
@@ -26,6 +28,10 @@ export const Order = () => {
           Рассчитать стоимость →
         </Button>
       </Stack>
+
+      <Box mb={19.25}>
+        <Support text="Живая служба поддержки 24/7" />
+      </Box>
     </Box>
   );
 };
