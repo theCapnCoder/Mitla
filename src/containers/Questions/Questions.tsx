@@ -5,7 +5,7 @@ import {
   AccordionSummary,
   Box,
   Typography,
-  styled
+  styled,
 } from "@mui/material";
 import questionsData from "./questionsData";
 import Support from "../Support";
@@ -20,7 +20,9 @@ const QuestionTypography = styled(Typography)({
 export const Questions = () => {
   return (
     <Box sx={{ padding: "135px 0", backgroundColor: "#FAFAFA" }}>
-      <Typography variant="h2" sx={{mb: 1}}>Часто задаваемые вопросы</Typography>
+      <Typography variant="h2" sx={{ mb: 1 }}>
+        Часто задаваемые вопросы
+      </Typography>
 
       <Box sx={{ display: "flex", justifyContent: "center" }}>
         <Box sx={{ width: "1400px", mb: 10 }}>
@@ -28,7 +30,7 @@ export const Questions = () => {
             <Accordion key={index}>
               <AccordionSummary
                 sx={{ padding: 0 }}
-                expandIcon={<ExpandMoreIcon sx={{ fontSize: 65}} />}
+                expandIcon={<ExpandMoreIcon sx={{ fontSize: 65 }} />}
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
@@ -41,7 +43,8 @@ export const Questions = () => {
           ))}
         </Box>
       </Box>
-      <Support/>
+
+      <Support text="Служба поддержки 24/7" />
     </Box>
   );
 };
