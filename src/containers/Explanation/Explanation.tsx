@@ -15,8 +15,8 @@ export const Explanation = () => {
         <ButtonGroup data={buttonData} />
       </Box>
 
-      <Box sx={{ position: "relative" }}>
-        <img src={room} alt="room" width={"100%"} />
+      <Box sx={{ position: "relative", width: "1400px", height: "820px" }}>
+        <img src={room} alt="room" width={"100%"} height={"100%"} />
         <Label
           title="Помоем подоконники, батареи, двери, ручки,выключатели"
           width="321px"

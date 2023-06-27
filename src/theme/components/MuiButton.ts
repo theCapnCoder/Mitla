@@ -18,6 +18,16 @@ const socialTypography = {
   color: '#FFFFFF',
 }
 
+const footerTypography = {
+  width: 240,
+  padding: '20px',
+  fontSize: 15,
+  fontWeight: 500,
+  lineHeight: '22px',
+  color: '#FFFFFF',
+  borderColor: '#ECECEC',
+}
+
 export const MuiButton: Props = {
   MuiButton: {
     styleOverrides: {
@@ -29,6 +39,9 @@ export const MuiButton: Props = {
         '& > *:nth-of-type(1)': {
           fontSize: 27,
         },
+      },
+      outlined: {
+        ...footerTypography,
       },
       containedPrimary: {
         backgroundColor: '#1876F2',
