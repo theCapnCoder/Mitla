@@ -1,0 +1,1 @@
+export { SwipeableTextMobileStepper } from './SwipeableTextMobileStepper'

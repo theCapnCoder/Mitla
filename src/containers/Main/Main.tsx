@@ -1,11 +1,15 @@
-import { Typography } from '@mui/material'
-import React from 'react'
+import { Box, Typography } from "@mui/material";
+import { SwipeableTextMobileStepper } from "../../components/SwipeableTextMobileStepper";
 
 export const Main = () => {
   return (
-    <div>
+    <Box sx={{ backgroundColor: "#25B2B4" }}>
       <Typography variant="h1">Закажи уборку квартиры</Typography>
-      <Typography variant="h4">В услугу входит уборка комнаты, кухни, ванной комнаты и коридора</Typography>
-    </div>
-  )
-}
+      <Typography variant="h4">
+        В услугу входит уборка комнаты, кухни, ванной комнаты и коридора
+      </Typography>
+
+      <SwipeableTextMobileStepper />
+    </Box>
+  );
+};
