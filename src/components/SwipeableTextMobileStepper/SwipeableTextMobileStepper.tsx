@@ -9,6 +9,8 @@ import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
 import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
+import { PrevArrow } from "../../assets/img/PrevArrow";
+import { NextArrow } from "../../assets/img/NextArrow";
 
 const AutoPlaySwipeableViews = SwipeableViews;
 
@@ -56,50 +58,53 @@ export const SwipeableTextMobileStepper = () => {
     <Box
       sx={{ position: "relative", display: "flex", justifyContent: "center" }}
     >
-      
       <Box
         sx={{
           position: "absolute",
-          top: "200px",
+          top: "100px",
           width: "1400px",
         }}
       >
         <MobileStepper
+          style={{ backgroundColor: "transparent" }}
           steps={maxSteps}
           position="static"
           activeStep={activeStep}
           nextButton={
             <Button
+              sx={{
+                color: "transparent",
+                "&.Mui-disabled": { color: "transparent" },
+              }}
               size="small"
               onClick={handleNext}
               disabled={activeStep === maxSteps - 1}
             >
-              Next
-              {theme.direction === "rtl" ? (
-                <KeyboardArrowLeft />
-              ) : (
-                <KeyboardArrowRight />
-              )}
+              <Box>
+                <NextArrow sx={{ width: "18px", height: "45px" }} />
+              </Box>
             </Button>
           }
           backButton={
             <Box>
               <Button
+                sx={{
+                  color: "transparent",
+                  "&.Mui-disabled": { color: "transparent" },
+                }}
                 size="small"
                 onClick={handleBack}
                 disabled={activeStep === 0}
               >
-                {theme.direction === "rtl" ? (
-                  <KeyboardArrowRight />
-                ) : (
-                  <KeyboardArrowLeft />
-                )}
-                Back
+                <Box>
+                  <PrevArrow sx={{ width: "18px", height: "45px" }} />
+                </Box>
               </Button>
             </Box>
           }
         />
       </Box>
+
       <Box
         sx={{
           maxWidth: "500px",
@@ -108,20 +113,6 @@ export const SwipeableTextMobileStepper = () => {
           backgroundColor: "grey",
         }}
       >
-        <Paper
-          square
-          elevation={0}
-          sx={{
-            display: "flex",
-            alignItems: "center",
-            height: 50,
-            pl: 2,
-            bgcolor: "background.default",
-          }}
-        >
-          <Typography>{images[activeStep].label}</Typography>
-        </Paper>
-
         <Box sx={{}}>
           <AutoPlaySwipeableViews
             axis={theme.direction === "rtl" ? "x-reverse" : "x"}
