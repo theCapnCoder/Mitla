@@ -10,7 +10,7 @@ export const Call = (props: SvgIconProps) => {
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
-      <g id="call 1" clip-path="url(#clip0_23_172)">
+      <g id="call 1" clipPath="url(#clip0_23_172)">
         <g id="Group">
           <g id="Group_2">
             <path
