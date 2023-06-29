@@ -43,7 +43,7 @@ export const MuiButton: Props = {
       outlined: {
         ...footerTypography,
       },
-      sizeMedium: {
+      sizeLarge: {
         padding: '22px 0',
         minWidth: '260px',
       },
