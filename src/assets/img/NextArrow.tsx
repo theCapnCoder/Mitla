@@ -14,9 +14,9 @@ export const NextArrow = (props: SvgIconProps) => {
         id="Vector 27"
         d="M1 1L19 23.5L1 46"
         stroke="white"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </SvgIcon>
   );

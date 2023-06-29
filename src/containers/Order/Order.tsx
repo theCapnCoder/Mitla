@@ -1,7 +1,8 @@
 import { Box, Button, Divider, Stack, Typography } from "@mui/material";
 import React from "react";
-import { Counter } from "./Counter/Counter";
+import { Counter } from "../../components/Calculate/Counter/Counter";
 import Support from "../Support";
+import { Calculate } from "../../components/Calculate";
 
 export const Order = () => {
   return (
@@ -10,25 +11,8 @@ export const Order = () => {
         Заказать уборку квартиры
       </Typography>
 
-      <Stack
-        direction={"row"}
-        mb={10.325}
-        sx={{ backgroundColor: "#FAFAFA", borderRadius: "8px" }}
-      >
-        <Divider orientation="horizontal" />
-        <Counter name="комната" />
-        <Divider orientation="vertical" variant="middle" flexItem />
-        <Counter name="caнузел" />
-        <Divider orientation="horizontal" />
-        <Button
-          sx={{ flexShrink: 0, padding: "39px 37px" }}
-          variant="contained"
-          color="warning"
-        >
-          Рассчитать стоимость →
-        </Button>
-      </Stack>
-
+      <Calculate />
+      
       <Box mb={19.25}>
         <Support text="Живая служба поддержки 24/7" />
       </Box>
