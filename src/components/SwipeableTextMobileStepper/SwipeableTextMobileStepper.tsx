@@ -39,17 +39,18 @@ export const SwipeableTextMobileStepper = () => {
       <Box
         sx={{
           position: "absolute",
-          top: "100px",
+          top: "185px",
           width: "1400px",
         }}
       >
         <MobileStepper
-          style={{ backgroundColor: "transparent" }}
+          style={{ padding: 0, backgroundColor: "transparent" }}
           steps={0}
           position="static"
           nextButton={
             <Button
               sx={{
+                justifyContent: "flex-end",
                 color: "transparent",
                 "&.Mui-disabled": { color: "transparent" },
               }}
@@ -66,6 +67,7 @@ export const SwipeableTextMobileStepper = () => {
             <Box>
               <Button
                 sx={{
+                  justifyContent: "flex-start",
                   color: "transparent",
                   "&.Mui-disabled": { color: "transparent" },
                 }}
