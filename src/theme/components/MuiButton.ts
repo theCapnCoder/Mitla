@@ -43,6 +43,10 @@ export const MuiButton: Props = {
       outlined: {
         ...footerTypography,
       },
+      sizeMedium: {
+        padding: '22px 0',
+        minWidth: '260px',
+      },
       containedPrimary: {
         backgroundColor: '#1876F2',
         ...socialTypography,
@@ -63,10 +67,6 @@ export const MuiButton: Props = {
         lineHeight: '22px',
         color: '#FFFFFF',
       }
-      // startIcon: {
-      //   fontSize: '40px',
-      //   color: 'red',
-      // }
     },
   },
 }
