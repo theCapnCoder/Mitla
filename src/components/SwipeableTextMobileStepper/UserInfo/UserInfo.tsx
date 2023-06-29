@@ -6,16 +6,17 @@ const NameTypography = styled(Typography)({
   paddingLeft: 2,
   color: "#FFF",
   fontSize: 20,
-  fonweight: 700,
-  lineheight: "26px",
+  fonWeight: 700,
+  lineHeight: "26px",
   textAlign: "left",
 })
 
 const TextTypography = styled(Typography)({
+  maxWidth: 751,
   color: "#FFF",
   fontSize: 18,
-  fonweight: 500,
-  lineheight: "36px",
+  fontWeight: 500,
+  lineHeight: "36px",
 })
 
 type UserInfoProps = Slider 
