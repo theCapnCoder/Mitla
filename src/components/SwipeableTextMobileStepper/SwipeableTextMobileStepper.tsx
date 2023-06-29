@@ -11,6 +11,9 @@ import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
 import { PrevArrow } from "../../assets/img/PrevArrow";
 import { NextArrow } from "../../assets/img/NextArrow";
+import { sliderData } from "./sliderData";
+import { Avatar, Stack } from "@mui/material";
+import { UserInfo } from "./UserInfo";
 
 const AutoPlaySwipeableViews = SwipeableViews;
 
@@ -67,9 +70,8 @@ export const SwipeableTextMobileStepper = () => {
       >
         <MobileStepper
           style={{ backgroundColor: "transparent" }}
-          steps={maxSteps}
+          steps={0}
           position="static"
-          activeStep={activeStep}
           nextButton={
             <Button
               sx={{
@@ -110,7 +112,11 @@ export const SwipeableTextMobileStepper = () => {
           maxWidth: "500px",
           margin: "0 auto",
           flexGrow: 1,
-          backgroundColor: "grey",
+          backgroundColor: "transparent",
+          height: "227px",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
         }}
       >
         <Box sx={{}}>
@@ -120,7 +126,26 @@ export const SwipeableTextMobileStepper = () => {
             onChangeIndex={handleStepChange}
             enableMouseEvents
           >
-            {images.map((step, index) => (
+            {sliderData.map((step, index) => (
+              <div key={step.text}>
+                {Math.abs(activeStep - index) <= 2 ? (
+                  <UserInfo {...step} />
+                ) : // <Box
+                //   component="img"
+                //   sx={{
+                //     height: 255,
+                //     display: "block",
+                //     maxWidth: 400,
+                //     overflow: "hidden",
+                //     width: "100%",
+                //   }}
+                //   src={step.imgPath}
+                //   alt={step.label}
+                // />
+                null}
+              </div>
+            ))}
+            {/* {images.map((step, index) => (
               <div key={step.label}>
                 {Math.abs(activeStep - index) <= 2 ? (
                   <Box
@@ -137,7 +162,7 @@ export const SwipeableTextMobileStepper = () => {
                   />
                 ) : null}
               </div>
-            ))}
+            ))} */}
           </AutoPlaySwipeableViews>
         </Box>
       </Box>
