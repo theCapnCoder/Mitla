@@ -19,7 +19,7 @@ export const sliderData: Slider[] = [
   },
   {
     userName: "Дмитрий",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, placeat ullam aperiam eos et iste at quis voluptas exercitationem saepe a molestiae enim perspiciatis facilis error doloribus aliquam hic beatae alias est impedit nemo voluptate dolores! Rem, accusamus iste!",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, placeat ullam aperiam eos et iste at quis voluptas exercitationem saepe a molestiae enim perspiciatis facilis error doloribus!",
     img: avatar2,
     stars: 4,
   },
@@ -31,7 +31,7 @@ export const sliderData: Slider[] = [
   },
   {
     userName: "Оксана",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nulla voluptas quo quam voluptates voluptatum! Explicabo commodi, dolorum nam pariatur fugiat, sunt iste aperiam dolor, assumenda dicta cum aliquam maiores. Nulla eius accusantium iusto dignissimos, repudiandae rem repellendus voluptates.",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nulla voluptas quo quam voluptates voluptatum! Explicabo commodi, dolorum nam pariatur fugiat, sunt iste aperiam dolor, assumenda dicta cum aliquam maiores.",
     img: avatar4,
     stars: 2,
   },
