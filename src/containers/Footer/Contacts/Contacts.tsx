@@ -1,4 +1,4 @@
-import { Box, Stack, Typography, styled } from "@mui/material";
+import { Stack, Typography, styled } from "@mui/material";
 import { Pin } from "../../../assets/img/Contacts/Pin";
 import { Mail } from "../../../assets/img/Contacts/Mail";
 import { Call } from "../../../assets/img/Contacts/Call";

@@ -2,8 +2,6 @@ import { Box, Typography, styled } from "@mui/material";
 import { SwipeableTextMobileStepper } from "../../components/SwipeableTextMobileStepper";
 import { ButtonsGroup } from "./ButtonsGroup";
 import bg from "../../assets/img/bg.jpg";
-import Order from "../Order";
-import { Counter } from "../../components/Calculate/Counter/Counter";
 import { Calculate } from "../../components/Calculate";
 
 const BackgroundBox = styled(Box)({

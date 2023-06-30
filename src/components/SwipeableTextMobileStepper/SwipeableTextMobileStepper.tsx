@@ -9,8 +9,6 @@ import { PrevArrow } from "../../assets/img/PrevArrow";
 import { NextArrow } from "../../assets/img/NextArrow";
 import { sliderData } from "./sliderData";
 import { UserInfo } from "./UserInfo";
-import { ButtonGroup } from "@mui/material";
-import { ButtonsGroup } from "../../containers/Main/ButtonsGroup";
 
 // const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 const AutoPlaySwipeableViews = SwipeableViews;

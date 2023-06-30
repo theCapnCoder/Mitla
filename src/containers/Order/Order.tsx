@@ -1,6 +1,4 @@
-import { Box, Button, Divider, Stack, Typography } from "@mui/material";
-import React from "react";
-import { Counter } from "../../components/Calculate/Counter/Counter";
+import { Box, Typography } from "@mui/material";
 import Support from "../Support";
 import { Calculate } from "../../components/Calculate";
 
@@ -12,7 +10,7 @@ export const Order = () => {
       </Typography>
 
       <Calculate />
-      
+
       <Box mb={19.25}>
         <Support text="Живая служба поддержки 24/7" />
       </Box>

@@ -5,16 +5,18 @@ import { MuiButton } from "./components/MuiButton";
 import { MuiAccordion } from "./components/MuiAccordion";
 import { MuiTypography } from "./components/MuiTypography";
 import { MuiToggleButton } from "./components/MuiToggleButton";
+import { MuiAppBar } from "./components/MuiAppBar";
 
 
 const theme = createTheme({
   ...breakpoints,
   ...typography,
   components: {
-    ...MuiButton,
-    ...MuiAccordion,
-    ...MuiTypography,
-    ...MuiToggleButton,
+      ...MuiAccordion,
+      ...MuiAppBar,
+      ...MuiButton,
+      ...MuiToggleButton,
+      ...MuiTypography,
   }
 })
 
