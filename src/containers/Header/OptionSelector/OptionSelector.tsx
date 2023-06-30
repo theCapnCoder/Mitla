@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   FormControl,
   Select,
@@ -7,21 +7,34 @@ import {
 } from "@mui/material";
 import { DropDown } from "../../../assets/img/DropDown";
 
+export type optionTime = {
+  value: string;
+  label: string;
+  defaultValue: boolean;
+};
+
 interface LanguageSelectorProps {
-  // Add any additional props if needed
+  data: optionTime[];
 }
 
-export const LanguageSelector: React.FC<LanguageSelectorProps> = () => {
-  const [selectedLanguage, setSelectedLanguage] = useState<string>("ru");
+export const OptionSelector: React.FC<LanguageSelectorProps> = ({ data }) => {
+  const [selectedOption, setSelectedOption] = useState<string>("");
 
   const handleLanguageChange = (event: SelectChangeEvent<string>) => {
-    setSelectedLanguage(event.target.value);
+    setSelectedOption(event.target.value);
   };
+
+  useEffect(() => {
+    const defaultOption = data.find((option) => option.defaultValue);
+    if (defaultOption) {
+      setSelectedOption(defaultOption.value);
+    }
+  }, [data]);
 
   return (
     <FormControl sx={{ "& fieldset": { border: "none" } }}>
       <Select
-        value={selectedLanguage}
+        value={selectedOption}
         onChange={handleLanguageChange}
         IconComponent={DropDown}
         displayEmpty
@@ -39,10 +52,12 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = () => {
           },
         }}
       >
-        <MenuItem value="ru">RU</MenuItem>
-        <MenuItem value="en">EN</MenuItem>
-        <MenuItem value="es">SP</MenuItem>
-        <MenuItem value="fr">FR</MenuItem>
+        {data &&
+          data.map(({ value, label }) => (
+            <MenuItem key={value} value={value}>
+              {label}
+            </MenuItem>
+          ))}
       </Select>
     </FormControl>
   );
