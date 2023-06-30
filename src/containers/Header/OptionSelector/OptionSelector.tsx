@@ -47,7 +47,8 @@ export const OptionSelector: React.FC<LanguageSelectorProps> = ({ data }) => {
         }}
         sx={{
           "& .MuiSvgIcon-root": {
-            width: "14px",
+            width: "12px",
+            marginRight: "7px",
             color: "transparent",
           },
         }}

@@ -31,16 +31,16 @@ export const Header = () => {
   };
 
   return (
-    <Box sx={{ py: 3.5, px: 3.75, flexGrow: 1 }}>
+    <Box sx={{ padding: "48px 30px 18px", flexGrow: 1 }}>
       <AppBar position="static" elevation={0}>
-        <Toolbar>
+        <Toolbar disableGutters>
           <LogoDark sx={{ mr: 5.12, width: "185px", height: "60px" }} />
           <IconButton
             size="large"
             edge="start"
             color="inherit"
             aria-label="menu"
-            sx={{ mr: 2 }}
+            sx={{marginRight: -0.5}}
           >
             <MenuIcon sx={{ width: "60px", height: "60px" }} />
           </IconButton>
@@ -48,7 +48,7 @@ export const Header = () => {
           <OptionSelector data={languageData} />
           <OptionSelector data={countryData} />
 
-          <ContactButton />
+          {/* <ContactButton /> */}
 
           <Cards />
 
@@ -72,8 +72,8 @@ export const Header = () => {
                 color="inherit"
               >
                 <Stack
-                  justifyContent={'center'}
-                  alignItems={'center'}
+                  justifyContent={"center"}
+                  alignItems={"center"}
                   sx={{
                     width: "60px",
                     height: "60px",
