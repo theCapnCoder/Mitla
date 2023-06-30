@@ -40,22 +40,28 @@ export const Header = () => {
             edge="start"
             color="inherit"
             aria-label="menu"
-            sx={{marginRight: -0.5}}
+            sx={{ marginRight: -0.5 }}
           >
             <MenuIcon sx={{ width: "60px", height: "60px" }} />
           </IconButton>
 
-          <OptionSelector data={languageData} />
-          <OptionSelector data={countryData} />
+          <Box sx={{ marginRight: "12px" }}>
+            <OptionSelector data={languageData} />
+            <OptionSelector data={countryData} />
+          </Box>
 
-          {/* <ContactButton /> */}
+          <Box sx={{ marginRight: "32px" }}>
+            <ContactButton />
+          </Box>
 
-          <Cards />
+          <Box sx={{ marginRight: "55px" }}>
+            <Cards />
+          </Box>
 
           <Button
             variant="contained"
             color="info"
-            sx={{ minWidth: "180px", padding: "14px 0" }}
+            sx={{marginRight: '18px', minWidth: "180px", padding: "14px 0" }}
             startIcon={<HandShake sx={{ width: "32px", height: "32px" }} />}
           >
             Партнерам
@@ -70,6 +76,7 @@ export const Header = () => {
                 aria-haspopup="true"
                 onClick={handleMenu}
                 color="inherit"
+                sx={{ padding: 0 }}
               >
                 <Stack
                   justifyContent={"center"}
