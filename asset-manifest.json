@@ -1,13 +1,18 @@
 {
   "files": {
-    "main.js": "/Mitla/static/js/main.259e0530.js",
+    "main.js": "/Mitla/static/js/main.e9c27914.js",
     "static/media/room.jpg": "/Mitla/static/media/room.cde6f55730c025491b11.jpg",
+    "static/media/bg.jpg": "/Mitla/static/media/bg.49e3e856350ec16e489d.jpg",
+    "static/media/avatar4.jpg": "/Mitla/static/media/avatar4.8dc9d6f780b486198936.jpg",
+    "static/media/avatar2.jpg": "/Mitla/static/media/avatar2.8caa4ecb9b60455ba648.jpg",
+    "static/media/avatar3.jpg": "/Mitla/static/media/avatar3.3752487a08a3420bc21f.jpg",
     "static/media/hall.png": "/Mitla/static/media/hall.cebc4b032eddd15287c9.png",
     "static/media/kitchen.png": "/Mitla/static/media/kitchen.0d3a9cd2116c2f1c779a.png",
+    "static/media/avatar1.png": "/Mitla/static/media/avatar1.1f6769be853590329f33.png",
     "index.html": "/Mitla/index.html",
-    "main.259e0530.js.map": "/Mitla/static/js/main.259e0530.js.map"
+    "main.e9c27914.js.map": "/Mitla/static/js/main.e9c27914.js.map"
   },
   "entrypoints": [
-    "static/js/main.259e0530.js"
+    "static/js/main.e9c27914.js"
   ]
 }
