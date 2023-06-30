@@ -17,6 +17,7 @@ export const ContactButton = () => {
   return (
     <Button
       sx={{
+        flexGrow: 0,
         padding: "19px 25px",
         "& .MuiButton-endIcon": {
           marginLeft: "15px", 
