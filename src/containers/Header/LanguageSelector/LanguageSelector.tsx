@@ -4,8 +4,8 @@ import {
   Select,
   MenuItem,
   SelectChangeEvent,
-  Typography,
 } from "@mui/material";
+import { DropDown } from "../../../assets/img/DropDown";
 
 interface LanguageSelectorProps {
   // Add any additional props if needed
@@ -19,33 +19,23 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = () => {
   };
 
   return (
-    <FormControl>
+    <FormControl sx={{ "& fieldset": { border: "none" } }}>
       <Select
         value={selectedLanguage}
-        // defaultValue={selectedLanguage}
-        // renderValue={(selected) => (
-        //   <Typography variant="body1" sx={{backgroundColor: 'red'}}>
-        //     {selected === 'en' ? 'English' : selected === 'es' ? 'Spanish' : selected === 'fr' ? 'French' : ''}
-        //   </Typography>
-        // )}
         onChange={handleLanguageChange}
-        // renderValue={() => (
-        //   <Typography variant="body1" sx={{ backgroundColor: "red" }}>
-        //     Hello
-        //   </Typography>
-        // )}
+        IconComponent={DropDown}
+        displayEmpty
         SelectDisplayProps={{
           style: {
-            backgroundColor: "yellow",
-            color: 'purple',
-            fontSize: 10,
+            fontSize: 14,
+            fontWeight: 600,
+            lineHeight: "22px",
           },
         }}
-        MenuProps={{
-          sx: {
-            "& .MuiPaper-root": {
-              backgroundColor: "red",
-            },
+        sx={{
+          "& .MuiSvgIcon-root": {
+            width: "14px",
+            color: "transparent",
           },
         }}
       >
@@ -53,7 +43,6 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = () => {
         <MenuItem value="en">EN</MenuItem>
         <MenuItem value="es">SP</MenuItem>
         <MenuItem value="fr">FR</MenuItem>
-        {/* Add more languages as needed */}
       </Select>
     </FormControl>
   );
