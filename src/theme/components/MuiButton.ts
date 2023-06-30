@@ -55,6 +55,9 @@ export const MuiButton: Props = {
         backgroundColor: '#419FD9',
         ...socialTypography,
       },
+      containedInfo: {
+        backgroundColor: '#25B2B4',
+      },
       containedSuccess: {
         backgroundColor: '#0DC143',
         ...socialTypography,
