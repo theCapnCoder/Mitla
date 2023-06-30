@@ -10,7 +10,13 @@ import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
 import { LogoDark } from "../../assets/img/LogoDark";
 import { MenuIcon } from "../../assets/img/MenuIcon";
-import { LanguageSelector } from "./LanguageSelector";
+import { OptionSelector } from "./OptionSelector";
+import { countryData, languageData } from "./selectData";
+import { ContactButton } from "./ContactButton";
+import { Cards } from "./Cards";
+import { Button, Stack } from "@mui/material";
+import { HandShake } from "../../assets/img/HandShake";
+import { Profile } from "../../assets/img/Profile";
 
 export const Header = () => {
   const [auth, setAuth] = React.useState(true);
@@ -39,22 +45,22 @@ export const Header = () => {
             <MenuIcon sx={{ width: "60px", height: "60px" }} />
           </IconButton>
 
-          <LanguageSelector />
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Photos
-          </Typography>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Photos
-          </Typography>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Photos
-          </Typography>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Photos
-          </Typography>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Photos
-          </Typography>
+          <OptionSelector data={languageData} />
+          <OptionSelector data={countryData} />
+
+          <ContactButton />
+
+          <Cards />
+
+          <Button
+            variant="contained"
+            color="info"
+            sx={{ minWidth: "180px", padding: "14px 0" }}
+            startIcon={<HandShake sx={{ width: "32px", height: "32px" }} />}
+          >
+            Партнерам
+          </Button>
+
           {auth && (
             <div>
               <IconButton
@@ -65,7 +71,18 @@ export const Header = () => {
                 onClick={handleMenu}
                 color="inherit"
               >
-                <AccountCircle />
+                <Stack
+                  justifyContent={'center'}
+                  alignItems={'center'}
+                  sx={{
+                    width: "60px",
+                    height: "60px",
+                    borderRadius: 1,
+                    backgroundColor: "#ECECEC",
+                  }}
+                >
+                  <Profile sx={{ width: "30px", height: "30px" }} />
+                </Stack>
               </IconButton>
               <Menu
                 id="menu-appbar"
