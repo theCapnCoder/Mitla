@@ -23,7 +23,7 @@ export const ExtraService = () => {
           m: "0 auto",
           mb: 10.75,
           width: "1960px",
-          marginLeft: "-44px",
+          marginLeft: "-20px",
         }}
       >
         {extraServiceCards.map((card, index) => (

@@ -29,7 +29,14 @@ export const Questions = () => {
           {questionsData.map(({ question, answer }, index) => (
             <Accordion key={index}>
               <AccordionSummary
-                sx={{ padding: 0 }}
+                sx={{
+                  padding: 0,
+                  svg: {
+                    position: "absolute",
+                    left: -45,
+                    top: -32,
+                  },
+                }}
                 expandIcon={<ExpandMoreIcon sx={{ fontSize: 65 }} />}
                 aria-controls="panel1a-content"
                 id="panel1a-header"
