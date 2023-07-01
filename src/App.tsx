@@ -11,22 +11,32 @@ import Branches from "./containers/Branches";
 import News from "./containers/News";
 import Order from "./containers/Order";
 import Footer from "./containers/Footer";
+import { Box, useMediaQuery } from "@mui/material";
+import { Warning } from "./containers/Warning";
 
 function App() {
+  const matches = useMediaQuery("(min-width:1920px)");
+
   return (
     <Container maxWidth="xl" disableGutters>
-      <Header />
-      <Main />
-      <Discount />
-      <Explanation />
-      <Service />
-      <ExtraService />
-      <Questions />
-      <Partners />
-      <Branches />
-      <News />
-      <Order />
-      <Footer />
+      {matches ? (
+        <>
+          <Header />
+          <Main />
+          <Discount />
+          <Explanation />
+          <Service />
+          <ExtraService />
+          <Questions />
+          <Partners />
+          <Branches />
+          <News />
+          <Order />
+          <Footer />
+        </>
+      ) : (
+        <Warning />
+      )}
     </Container>
   );
 }
