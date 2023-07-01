@@ -10,8 +10,7 @@ import { NextArrow } from "../../assets/img/NextArrow";
 import { sliderData } from "./sliderData";
 import { UserInfo } from "./UserInfo";
 
-// const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
-const AutoPlaySwipeableViews = SwipeableViews;
+const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 export const SwipeableTextMobileStepper = () => {
   const theme = useTheme();
