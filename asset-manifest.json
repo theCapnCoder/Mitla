@@ -1,18 +1,33 @@
 {
   "files": {
-    "main.js": "/Mitla/static/js/main.e9c27914.js",
+    "main.js": "/Mitla/static/js/main.0d7ed5c2.js",
     "static/media/room.jpg": "/Mitla/static/media/room.cde6f55730c025491b11.jpg",
     "static/media/bg.jpg": "/Mitla/static/media/bg.49e3e856350ec16e489d.jpg",
     "static/media/avatar4.jpg": "/Mitla/static/media/avatar4.8dc9d6f780b486198936.jpg",
     "static/media/avatar2.jpg": "/Mitla/static/media/avatar2.8caa4ecb9b60455ba648.jpg",
     "static/media/avatar3.jpg": "/Mitla/static/media/avatar3.3752487a08a3420bc21f.jpg",
+    "static/media/picture4.jpg": "/Mitla/static/media/picture4.a3b6819f8a3b9d98bda9.jpg",
+    "static/media/picture11.jpg": "/Mitla/static/media/picture11.85b530c28b705b7ee2af.jpg",
+    "static/media/picture1.jpg": "/Mitla/static/media/picture1.69dd573faed0ae024e29.jpg",
+    "static/media/react.png": "/Mitla/static/media/react.8a6fc0a24a800d1e0f4a.png",
+    "static/media/picture3.jpg": "/Mitla/static/media/picture3.71a372ba50850d6ac905.jpg",
+    "static/media/picture10.jpg": "/Mitla/static/media/picture10.a10af0c1aeae29a65a7b.jpg",
+    "static/media/picture13.jpg": "/Mitla/static/media/picture13.108be166b75f6fa332b1.jpg",
+    "static/media/picture12.jpg": "/Mitla/static/media/picture12.11a2d2a91806a12621b2.jpg",
+    "static/media/picture8.jpg": "/Mitla/static/media/picture8.9b9c8c0af0317febd7b3.jpg",
+    "static/media/picture9.jpg": "/Mitla/static/media/picture9.0fad02dbce469ada1c6a.jpg",
+    "static/media/picture2.jpg": "/Mitla/static/media/picture2.b5f83e23c56cd94e9323.jpg",
+    "static/media/picture6.jpg": "/Mitla/static/media/picture6.1a19dd0e8d699d41ac33.jpg",
     "static/media/hall.png": "/Mitla/static/media/hall.cebc4b032eddd15287c9.png",
+    "static/media/picture7.jpg": "/Mitla/static/media/picture7.0254d49b9970964509bd.jpg",
     "static/media/kitchen.png": "/Mitla/static/media/kitchen.0d3a9cd2116c2f1c779a.png",
+    "static/media/picture5.jpg": "/Mitla/static/media/picture5.60caa2b96244e4650838.jpg",
     "static/media/avatar1.png": "/Mitla/static/media/avatar1.1f6769be853590329f33.png",
+    "static/media/materialUi.png": "/Mitla/static/media/materialUi.5b2d8a0a309d9f7d47c1.png",
     "index.html": "/Mitla/index.html",
-    "main.e9c27914.js.map": "/Mitla/static/js/main.e9c27914.js.map"
+    "main.0d7ed5c2.js.map": "/Mitla/static/js/main.0d7ed5c2.js.map"
   },
   "entrypoints": [
-    "static/js/main.e9c27914.js"
+    "static/js/main.0d7ed5c2.js"
   ]
 }
