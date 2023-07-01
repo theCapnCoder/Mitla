@@ -11,14 +11,16 @@ import Branches from "./containers/Branches";
 import News from "./containers/News";
 import Order from "./containers/Order";
 import Footer from "./containers/Footer";
-import { Box, useMediaQuery } from "@mui/material";
+import { useMediaQuery } from "@mui/material";
 import { Warning } from "./containers/Warning";
+import { Documentation } from "./containers/Documentation";
 
 function App() {
   const matches = useMediaQuery("(min-width:1920px)");
 
   return (
     <Container maxWidth="xl" disableGutters>
+      <Documentation />
       {matches ? (
         <>
           <Header />
